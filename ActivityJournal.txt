@@ -1,0 +1,40 @@
+Activity Journal
+
+Name: Gavin Crane
+
+================================================================
+Start 2/28
+Estimated Time	10 00 ish
+Plan:
+(Order of implementation, testing approach, etc.)
+- basic error handling (wrong number of arguments)
+- figure out how to read .ppm header data
+- mess around with the structs and understand how they work
+- figure out how to read pixel data using fread, output its contents into a new ppm file to make sure its correct. (download ppm extension)
+- figure out how to use threads in parallel. Will we need a mutex? When do we join?
+- figure out how to divide the work between threads if it doesnt divide evenly.
+- understand how to use the given threadfn code.
+- use liveshare extension on vscode to collaborate.
+- test the program on all images and compare results with the given filtered images
+- check compiler warnings 
+- check formatting style and comments
+- start report and experiment with threads
+- plot data and talk about results and other observations
+
+Complete 3/7
+Actual Time	15 00 ish
+Observations/learned:
+(Lessons learned, problems encountered, obstacles overcome, etc.)
+- Do not manually edit ppm header info in text files. It corrupts the file. This caused us a lot of headaches not knowing this.
+- For the best performance, use the same number of threads as the computer processor.
+- liveshare extension on vscode is an awesome tool.
+- how to memory allocate for an array of structs.
+- how to dynamically create threads
+- how to create and join threads so they run in parallel.
+- How threadfn works, iterate over image and filter, apply it, etc.
+- How to use getimeofday() to start and end a counter.
+- The program is fully functional on all given image inputs.
+
+
+
+================================================================
